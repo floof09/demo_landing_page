@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fbe3d4; /* Soft peach background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.carousel {
+  width: 70%; /* Adjust as needed */
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background */
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.work {
+  flex: 0 0 auto;
+  width: 100%; /* Adjust as needed */
+  padding: 20px; /* Adjust spacing between works */
+  text-align: center; /* Center the content */
+  border-right: 1px solid #ffb6a8; /* Soft peach border */
+}
+
+.work:last-child {
+  border-right: none; /* Remove border for the last work */
+}
+
+.work img {
+  width: 80%; /* Adjust the image size */
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto; /* Center the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.work img:hover {
+  transform: scale(1.05); /* Enlarge the image on hover */
+}
+
+.work h2 {
+  margin-top: 15px; /* Add space between image and name */
+  font-size: 18px; /* Adjust font size */
+  color: #333; /* Dark gray color */
+}
+
+.work a {
+  text-decoration: none; /* Remove underline for links */
+  color: #333; /* Dark gray color */
+}
+
+.work a:hover {
+  color: #ff938e; /* Soft coral color on hover */
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  background-color: #ff938e; /* Soft coral color */
+  color: #fff; /* White color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: #ff7066; /* Darker coral color on hover */
+}
